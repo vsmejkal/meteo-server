@@ -14,7 +14,7 @@ I am running this meteo server on Raspberry Pi Zero 2.
 
 You will need to:
 
-1) Install (Go)[https://go.dev/] on your computer if you don't have it already
+1) Install [Go](https://go.dev/) on your computer if you don't have it already
 2) Compile the source
 ```
 GOARCH=arm GOARM=7 GOOS=linux go build meteo-server.go
@@ -30,5 +30,4 @@ scp server username@IP_ADDRESS:/home/username/meteo
 5) To run the server automatically on startup, add this line to `/etc/rc.local`:
 ```
 sudo /home/username/meteo/meteo-server &
-
 ```
